@@ -19,10 +19,13 @@ export default async function Home() {
       {/* 1. 상단 헤더 영역 - 시원한 파란색 */}
       <header className="bg-blue-600 text-white py-5 px-4 shadow-md sticky top-0 z-10 transition-colors">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <h1 className="text-2xl font-bold tracking-tight text-white flex items-center gap-2 drop-shadow-sm">
+          <Link href="/" className="text-2xl font-bold tracking-tight text-white flex items-center gap-2 drop-shadow-sm hover:opacity-90 transition">
             <span>🌊</span> 성남시 생활 정보
-          </h1>
-          <span className="text-sm bg-blue-800/60 px-3 py-1 rounded-full font-medium backdrop-blur-sm border border-blue-500">우리 동네 소식</span>
+          </Link>
+          <nav className="flex gap-4 items-center">
+            <Link href="/" className="text-white hover:text-blue-200 font-medium pb-1 border-b-2 border-white">홈</Link>
+            <Link href="/blog" className="text-white hover:text-blue-200 font-medium">블로그</Link>
+          </nav>
         </div>
       </header>
 
@@ -64,9 +67,9 @@ export default async function Home() {
                   </div>
                 </div>
                 
-                {/* 하단 링크 버튼을 <a> 대신 <Link>로 바꾸어 상세 페이지로 연결합니다 */}
+                {/* 블로그로 이동하도록 링크를 수정합니다. */}
                 <div className="px-5 py-3 bg-blue-50/50 border-t border-blue-100 mt-auto opacity-90 hover:opacity-100">
-                  <Link href={`/details/${event.id}`} className="text-sm font-bold text-blue-700 hover:text-blue-900 flex items-center justify-center transition-colors">
+                  <Link href="/blog" className="text-sm font-bold text-blue-700 hover:text-blue-900 flex items-center justify-center transition-colors">
                     자세히 보기 &rarr;
                   </Link>
                 </div>
@@ -111,7 +114,7 @@ export default async function Home() {
                 </div>
                 
                 <div className="px-5 py-3 bg-sky-50/50 border-t border-sky-100 mt-auto opacity-90 hover:opacity-100">
-                  <Link href={`/details/${benefit.id}`} className="text-sm font-bold text-sky-700 hover:text-sky-900 flex items-center justify-center transition-colors">
+                  <Link href="/blog" className="text-sm font-bold text-sky-700 hover:text-sky-900 flex items-center justify-center transition-colors">
                     신청 안내 보기 &rarr;
                   </Link>
                 </div>
