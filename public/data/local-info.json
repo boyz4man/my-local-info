@@ -248,6 +248,18 @@
       "summary": "노후화된 연근해 어선을 교체하고자 하는 자에게 현대화 어선으로 대체 건조 지원",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000056",
       "title": "안전복지형 연근해어선 기반구축"
+    },
+    {
+      "id": 22,
+      "name": "어업활동 지원",
+      "category": "혜택",
+      "startDate": "2023-10-27",
+      "endDate": "상시",
+      "location": "해양수산부",
+      "target": "사업 지원 대상자격을 갖춘 어업경영체(신청인 : 어업경영체에 등록된 경영주)로 경영주 및 경영주외 어업인",
+      "summary": "사고·질병 등으로 어업활동이 곤란한 어가 대상으로 대체인력 채용비용 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000059",
+      "title": "어업활동 지원"
     }
   ]
 }
